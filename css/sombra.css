@@ -1,0 +1,83 @@
+:root{
+    --rosa: #FFD0CC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--rosa);
+}
+
+.maquiagem-container{
+    background-color: var(--rosa);
+    width: 100%;
+}
+
+
+.carrega-sombra{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    
+}
+
+.img-sombras{
+    width: 300px;
+    height: 300px;
+    padding: 10px 15px;
+}
+
+.marca-sombra{
+    padding: 10px 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 500;
+}
+
+.categoria-sombra{
+    padding: 10px 15px;
+}
+
+.preco-sombra{
+    padding: 0px 4px;
+}
+
+.preco{
+    display: flex;
+    padding: 10px 15px;
+    font-size: 100;
+}
+
+.sombra-container{
+    padding: 30px;
+}
+
+.container{
+    position: relative;
+    width: 330px;
+    height: 500px;
+    background-color:#FFF;
+    box-shadow:0 1px 2px 0 rgba(189, 175, 175, 0.2);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.container:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container:hover{
+    transform: scale(1.25, 1.25);
+    background-color: black;
+    color: #FFF;
+}
+
+.container:hover::after{
+    opacity: 2;
+}

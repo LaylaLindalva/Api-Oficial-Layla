@@ -1,0 +1,53 @@
+:root{
+    --rosa: #FFD0CC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    background-color: var(--rosa);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    border-radius: 15px;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+input{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+label{
+    font-family: "Inter", sans-serif;
+    font-size: 500;
+}
+
+button{
+    background-color: black;
+    color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.span{
+    display: none;
+}

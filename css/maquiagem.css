@@ -1,0 +1,170 @@
+:root{
+    --rosa: #FFD0CC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--rosa);
+}
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-batom{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.container-batom:hover{
+    transform: scale(1.25, 1.25);
+}
+
+.container-sombra:hover{
+    transform: scale(1.25, 1.25);
+    
+}
+
+.container-sombra{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.escolher-h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 880px){
+    .container-principal{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .container-batom img{
+        width: 350px;
+    }
+    .container-sombra img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .container-batom img{
+        width: 300px;
+    }
+    .container-sombra img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .container-batom img{
+        width: 250px;
+    }
+    .container-sombra img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 290px){
+    .container-batom img{
+        width: 200px;
+    }
+    .container-sombra img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 241px){
+    .container-batom img{
+        width: 150px;
+    }
+    .container-sombra img{
+        width: 150px;
+    }
+}
+
+
+/* .maquiagem-container{
+    background-color: var(--rosa);
+    width: 100%;
+}
+
+
+.carrega-batom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    
+}
+
+.img-batons{
+    width: 300px;
+    height: 400px;
+    padding: 10px 15px;
+}
+
+.marca-batom{
+    padding: 10px 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 500;
+}
+
+.categoria-batom{
+    padding: 10px 15px;
+}
+
+.preco-batom{
+    padding: 0px 4px;
+}
+
+.preco{
+    display: flex;
+    padding: 10px 15px;
+    font-size: 100;
+}
+
+.batom-container{
+    padding: 30px;
+} */
+
+.container{
+    position: relative;
+    width: 330px;
+    height: 600px;
+    background-color:#FFF;
+    box-shadow:0 1px 2px 0 rgba(189, 175, 175, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.container:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container:hover{
+    transform: scale(1.25, 1.25);
+}
+
+.container:hover::after{
+    opacity: 2;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+        <div>
+            <h1>Cadastro</h1>
+            <form id="formu">
+            <label for="">Nome: </label>
+            <input id="nome" type="text" placeholder="Digite seu nome" oninput="validaNome()">
+            <span class="span" id="span">Nome deve ter no mínimo 3 catacteres</span>
+            <br><br>
+            <label for="">Email: </label>
+            <input type="email" placeholder="Digite seu email">
+            <span class="span"  id="span">Digite um email válido</span>
+            <br><br>
+            <label for="">Telefone: </label>
+            <input type="text" placeholder="Digite seu telefone">
+            <span class="span"  id="span">Telefone deve ter 9 digitos</span>
+            <br><br>
+            <label for="">Nome de Usuário: </label>
+            <input type="text" placeholder="Digite um nome para usuário">
+            <span class="span"  id="span">Nome deve ter no mínimo 4 catacteres</span>
+            <br><br>
+            <label for="">Senha: </label>
+            <input type="password" placeholder="Digite uma senha">
+            <span class="span"  id="span">Digite uma senha com no mínimo 8 caracter</span>
+            <br><br>
+            <input type="password" placeholder="Confirme sua senha">
+            <span class="span"  id="span">Senhas tem que ser iguais</span>
+            <br><br>
+            <button>Cadastrar</button>
+        </form>
+        </div>
+
+        <script src="../js/cadastro.js"></script>
+</body>
+</html>

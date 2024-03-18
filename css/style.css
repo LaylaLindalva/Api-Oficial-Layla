@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --rosa: #FFD0CC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 200;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 28px 8%;
+    background-color: var(--rosa);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 46px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover{
+    color: #FFF;
+    transition: 1.25, 1.25;
+}
+
+.btn{
+    border: 10px black;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: black;
+}
+.btn a:hover{
+    color: #FFF;
+}
+
+.img-logo{
+    border-radius: 100px;
+}
+
+.btn-mobi{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .list,
+    .navbar .btn{
+        display: none;
+    }
+
+    .btn-mobi{
+        display: block;
+        border: none;
+        background-color: #FFD0CC;
+        cursor: pointer;
+    }
+    .btn-login-mobi{
+        border: 10px black;
+        display: flex;
+        justify-content: center;
+        background-color: #FFF;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .btn-login-mobi a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+    .btn-login-mobi:hover{
+        background-color: black;
+    }
+    .btn-login-mobi a:hover{
+        color: #FFF;
+    }
+    .lista-mobi{
+        list-style: none;
+    }
+    .nav-item-mobi{
+        padding: 5px;
+    }
+    .nav-item-mobi a{
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-item-mobi a:hover{
+        color: black;
+    }
+    .open{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+
+footer{
+    width: 100%;
+}
+
+.container-foot{
+    background-color: var(--rosa);
+    display: flex;
+    padding: 0px 8% 24px 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais a{
+    padding: 5px;
+}
+
+.cuide-bem{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px){
+    .container-foot{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.container-principal{
+    display: flex;
+    padding: 20px;
+}
+
+.container-1{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    background-color: black;
+    color: #FFF;
+    width: 384px;
+    height:548px;
+}
+
+.container-2{
+    top: 70%;
+    display: flex;
+}
+
+.container-1:hover{
+    background-color: #FFF;
+    color: black;
+}
+/* *{
+    padding: 0;
+    margin: 0;
+}
+
+.inicio{
+    background-color: black;
+    height: 20px;
+}
+
+.nav-bar{
+    background-color: var(--rosa);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul{
+    display: flex;
+    width: 25%;
+}
+
+
+.perfil{
+    border-radius: 50px;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.buscar{
+    align-items: center;
+    display: flex; 
+    width: 50%;
+}
+
+.busque{
+    border-radius: 5px;
+    padding: 2px;
+    width: 100%;
+}
+
+.botao{
+    background-color: var(--rosa);
+    border: #FFD0CC;
+}
+
+.login{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 1.15rem;
+}
+
+.opcoes{
+    display: flex;
+    border-radius: 10px;
+    color: #FFF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-principal{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens-principais{
+    display: flex;
+}
+
+.boca{
+    padding: 0px 13px;
+}
+
+.piguimento{
+    padding: 12px 0px;
+}
+
+.paleta-1{
+    padding: 12px 0px;
+}
+
+.maquiagens{
+    display: flex;
+    padding: 20px;
+}
+
+section img{
+    width: 200px;
+    height: 204px;
+}
+
+.info{
+    display: flex;
+    background-color: var(--rosa);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info ul{
+    display: flex;
+    list-style: none; 
+    justify-content: center;
+}
+
+.presente{
+    padding: 0px 50px;
+}
+
+.nav-login li{
+    display: flex;
+}
+
+.nav-infor{
+    margin: 0px 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.15rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+} */
