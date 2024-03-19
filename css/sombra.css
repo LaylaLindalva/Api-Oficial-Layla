@@ -81,3 +81,132 @@ body{
 .container:hover::after{
     opacity: 2;
 }
+
+@media screen and (max-width: 1550px){
+    .img-sombras{
+        width: 250px;
+        height: 350px;
+    }
+    .container{
+        width: 300px;
+        height: 550px;
+    }
+}
+
+
+@media screen and (max-width: 1450px){
+    .img-sombras{
+        width: 200px;
+        height: 300px;
+    }
+    .container{
+        width: 250px;
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .img-sombras{
+        width: 150px;
+        height: 200px;
+    }
+    .container{
+        width: 200px;
+        height: 460px;
+    }
+}
+
+
+@media screen and (max-width: 1240px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 170px;
+        height: 395px;
+    }
+}
+
+
+@media screen and (max-width: 930px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 180px;
+        height: 395px;
+    }
+    .carrega-sombra{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 878px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 190px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 840px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 180px;
+        height: 350px;
+    }  
+    .carrega-sombra{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 730px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 180px;
+        height: 350px;
+    }  
+    .carrega-sombra{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .img-sombras{
+        width: 100px;
+        height: 150px;
+    }
+    .container{
+        width: 160px;
+        height: 350px;
+    }
+    .container h1{
+        padding: 0;
+    }
+    .container h3{
+        padding: 0;
+    }
+}

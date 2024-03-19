@@ -25,7 +25,7 @@ const getAllBatom = async () => {
         <div class="preco">
         <h4>${batom.price_sign}</h4>
         <h4 class="preco-batom">${batom.price}</h4>
-        // <a href="./batomnovo.html?/${batom.id}">Click Aqui</a>
+        // <a href="./batomnovo.html/${batom.id}">Click Aqui</a>
         </div>
         </div>
         </div>
